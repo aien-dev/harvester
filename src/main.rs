@@ -67,7 +67,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         Commands::Status => {
             println!("AIEN Sovereign Harvester Pipeline Active");
             println!("Zero Disk Secrets: Enforced via hardware TPM vault (atlas-vault)");
-            println!("License: PolyForm Noncommercial 1.0.0 with Sovereign Defense Covenant");
+            println!("License: Sovereign Reciprocal Commons License 1.0 (SRCL-1.0)");
         }
     }
     Ok(())

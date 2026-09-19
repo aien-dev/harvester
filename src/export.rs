@@ -24,7 +24,7 @@ impl DatasetExporter {
                     "source_model": pair.model,
                     "tokens": pair.token_count,
                     "quality": pair.quality_score,
-                    "license": "PolyForm-Noncommercial-1.0.0 Sovereign Defense Covenant"
+                    "license": "SRCL-1.0 (Apache-2.0 WITH LLVM-exception)"
                 }
             });
             writeln!(file, "{}", record)?;

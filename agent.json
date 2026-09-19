@@ -1,0 +1,23 @@
+{
+  "$schema": "https://aien.org/schemas/agent-v1.json",
+  "name": "harvester",
+  "version": "0.1.0",
+  "description": "High-throughput native reasoning extractor and dataset distillation pipeline under Sovereign Reciprocal Commons License",
+  "repository": "https://github.com/aien-dev/harvester",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "architecture": [
+    "x86_64",
+    "aarch64-grace-blackwell"
+  ],
+  "conventions": {
+    "mandatory_branching": true,
+    "zero_em_dashes": true
+  },
+  "runtime": {
+    "rust": "1.85+"
+  },
+  "commands": {
+    "build": "cargo build --release",
+    "test": "cargo test"
+  }
+}
