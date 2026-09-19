@@ -21,7 +21,7 @@ enum Commands {
         prompt: String,
         #[arg(short, long)]
         input: String,
-        #[arg(short, long, default_value = "commercial-lab")]
+        #[arg(long, default_value = "commercial-lab")]
         provider: String,
         #[arg(short, long, default_value = "frontier-model")]
         model: String,
@@ -71,4 +71,15 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
     }
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use clap::CommandFactory;
+    use super::*;
+
+    #[test]
+    fn verify_cli() {
+        Cli::command().debug_assert();
+    }
 }
