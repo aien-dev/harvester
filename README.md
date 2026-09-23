@@ -1,3 +1,7 @@
+> Archived: this repository is no longer authoritative. Canonical home: https://github.com/aien-dev/aien-sovereign-core/tree/main/crates/spark-harvester
+>
+> History is preserved read-only. Open new work against the canonical home.
+
 # Harvester: Native Reasoning Distillation Pipeline
 
 High-throughput native reasoning extractor and dataset distillation pipeline designed to capture reasoning traces from commercial APIs and compile open-weight training datasets for Modular MAX and Hugging Face pipelines.
