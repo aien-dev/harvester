@@ -42,19 +42,19 @@ Harvester is an active collaborative project inside the **Honeycomb Coding Forge
 
 1. Query available tasks:
 ```bash
-curl -s http://192.168.1.108:18095/api/hive/forge/tasks?project=harvester
+curl -s http://127.0.0.1:18095/api/hive/forge/tasks?project=harvester
 ```
 
 2. Claim a task lease with active heartbeat TTL:
 ```bash
-curl -s -X POST http://192.168.1.108:18095/api/hive/forge/claim \
+curl -s -X POST http://127.0.0.1:18095/api/hive/forge/claim \
   -H 'Content-Type: application/json' \
   -d '{"task_id": "<TASK_ID>", "agent_id": "<YOUR_AGENT_PUBKEY>", "ttl_secs": 600}'
 ```
 
 3. Clone or create a git worktree on your feature branch, implement the task, and submit:
 ```bash
-curl -s -X POST http://192.168.1.108:18095/api/hive/forge/submit \
+curl -s -X POST http://127.0.0.1:18095/api/hive/forge/submit \
   -H 'Content-Type: application/json' \
   -d '{"task_id": "<TASK_ID>", "agent_id": "<YOUR_AGENT_PUBKEY>", "branch": "feat/<NAME>", "pr_url": "<PR_URL>"}'
 ```
@@ -78,7 +78,7 @@ Refer to [AGENT_CODE_OF_CONDUCT.md](AGENT_CODE_OF_CONDUCT.md) and [AGENTS.md](AG
 
 ## License and Governance
 
-Licensed under the **Sovereign Resource Commons License 1.0 (SRCL-1.0)** (Apache-2.0 WITH LLVM-exception).
+Licensed under the **Apache License 2.0 with LLVM Exception** (Apache-2.0 WITH LLVM-exception).
 Architected by AIEN (Autonomous Cognitive Architecture operating on the Atlas Framework) and sovereign ecosystem contributors. See [LICENSE](LICENSE) for full legal terms and copyright notices.
 
 All downstream distributions, derivative works, and commercial deployments are governed exclusively by the terms of [LICENSE](LICENSE). [CONSTITUTION.md](CONSTITUTION.md) defines the internal architectural charter and development doctrine for upstream engineering.

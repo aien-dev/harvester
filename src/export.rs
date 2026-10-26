@@ -24,7 +24,7 @@ impl DatasetExporter {
                     "source_model": pair.model,
                     "tokens": pair.token_count,
                     "quality": pair.quality_score,
-                    "license": "SRCL-1.0 (Apache-2.0 WITH LLVM-exception)"
+                    "license": "Apache-2.0 WITH LLVM-exception"
                 }
             });
             writeln!(file, "{}", record)?;
