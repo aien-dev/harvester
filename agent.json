@@ -2,7 +2,7 @@
   "$schema": "https://aien.org/schemas/agent-v1.json",
   "name": "harvester",
   "version": "0.1.0",
-  "description": "High-throughput native reasoning extractor and dataset distillation pipeline under Sovereign Reciprocal Commons License",
+  "description": "High-throughput native reasoning extractor and dataset distillation pipeline under Apache-2.0 WITH LLVM-exception",
   "repository": "https://github.com/aien-dev/harvester",
   "license": "Apache-2.0 WITH LLVM-exception",
   "architecture": [
